@@ -19,7 +19,7 @@ public class StudentControllerImpl implements StudentController {
 	@Autowired
 	private StudentService studentService;
 
-	@RequestMapping(value = "/savet", method = RequestMethod.POST)
+	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public Response addStudent(@RequestBody Student student) {
 		return studentService.addStudent(student);
 	}
